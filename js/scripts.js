@@ -13,7 +13,7 @@ let pokemonList= [
   number: '4',
   height: '0.6m',
   weight: '8.5kg',
-  type: 'Monster , Dragon'
+  type: 'Monster , Dragon',
 },
 {
   id:'007',
@@ -23,4 +23,4 @@ let pokemonList= [
   weight: '9kg',
   type: 'Mosnter , Water',
 },
-],
+];

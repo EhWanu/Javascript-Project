@@ -26,12 +26,6 @@ let pokemonList= [
 ];
 
 
-for (let i=0; i <pokemonList.length; i++)
-{
-  if (pokemonList[i].height >= 0.7) //if Pokemon is equal too or larger than 0.7
-  document.write('<br>' + pokemonList[i].id + ' ' + pokemonList[i].name + ' height: ' + pokemonList[i].height + ' -  This one is the biggest! '); //for loop writing pokedex attributes.
-
-
-  else if (pokemonList[i].height < 0.7) //if pokemon is smaller than 0.7
-  document.write('<br>' + pokemonList[i].id + ' ' + pokemonList[i].name + ' height: ' + pokemonList[i].height);  //for loop writing pokedex attributes.
-}
+pokemonList.forEach(function(pokemon) {
+    document.write('<p>' + pokemon.name + '  ' + pokemon.height + ' ' + pokemon.weight)
+  });

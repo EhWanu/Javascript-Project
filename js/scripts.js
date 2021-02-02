@@ -1,4 +1,5 @@
-let pokemonList= [
+let pokemonRepository = (function () {
+  let pokemonList= [
   {
     id: 001,
   name: 'Bulbasaur',
@@ -21,10 +22,25 @@ let pokemonList= [
   number: '7',
   height: 0.5,
   weight: '9kg',
-  type: 'Mosnter , Water',
-},
+  type: 'Monster , Water',
+}
 ];
 
+function add(pokemon) {
+  pokemonList.push(pokemon);
+}
+
+function getAll() {
+  return pokemonList;
+}
+
+return {
+  add: add,
+  getAll: getAll
+};
+})();
+
+document.write(pokemonRepositry.getAll() );
 
 pokemonList.forEach(function(pokemon) {
     document.write('<p>' + pokemon.name + '  ' + pokemon.height + ' ' + pokemon.weight)

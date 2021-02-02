@@ -40,7 +40,7 @@ return {
 };
 })();
 
-document.write(pokemonRepositry.getAll() );
+document.write(pokemonRepository.getAll() );
 
 pokemonList.forEach(function(pokemon) {
     document.write('<p>' + pokemon.name + '  ' + pokemon.height + ' ' + pokemon.weight)

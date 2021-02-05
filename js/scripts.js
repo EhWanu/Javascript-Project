@@ -85,12 +85,12 @@ pokemonRepository.loadList().then(function () {
 
 function showLoadMessage() {
 let loadMessage = document.createElement('img');
-  loadMessage.scr='img/loading.gif';
+  loadMessage.src='img/loading.gif';
   loadMessage.classList.add('load-message');
   document.querySelector('body').appendChild(loadMessage);
 }
 
-function hideLoadMessag() {
+function hideLoadMessage() {
 let loadMessage = document.querySelector('load-message');
   loadMessage.parentElemnt.removeChild(loadMessage);
 }

@@ -41,7 +41,7 @@ let pokemonRepository = (function () {
         add(pokemon);
         console.log(pokemon);
       });
-      hideloadMessage();
+      hideLoadMessage();
     }).catch(function (e) {
       console.error(e);
     })
@@ -92,5 +92,5 @@ let loadMessage = document.createElement('img');
 
 function hideLoadMessage() {
 let loadMessage = document.querySelector('load-message');
-  loadMessage.parentElemnt.removeChild(loadMessage);
+  loadMessage.parentElement.removeChild(loadMessage);
 }

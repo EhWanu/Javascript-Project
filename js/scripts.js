@@ -22,7 +22,9 @@ let pokemonRepository = (function () {
     let listpokemon = document.createElement("list-group-item");
     let button = document.createElement("button");
     button.innerText = pokemon.name;
+    button.classList.add('text-capitalize');
     button.classList.add("btn-danger", "btn-lg", "btn-block");
+    button.setAttribute('data-bs-name', pokemon.name);
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
     button.addEventListener("click", function (event) {

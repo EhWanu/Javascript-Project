@@ -65,7 +65,6 @@ let pokemonRepository = (function () {
   };
 
   function loadList() {
-    showLoadMessage();
     return fetch(apiUrl).then(function (response) {
       return response.json();
     })
@@ -79,7 +78,6 @@ let pokemonRepository = (function () {
         });
       }).catch(function (e) {
         console.error(e);
-        hideLoadMessage();
       })
   };
 
